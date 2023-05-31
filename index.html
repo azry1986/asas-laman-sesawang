@@ -6,11 +6,8 @@
   </head>
 
   <style>
-    
     body {
-      padding: 80px;
-      padding-top: 70px;
-      background-color: #f5efef;
+      background-color: #f7f7f7;
     }
     p {
       font-size: 16px;
@@ -18,13 +15,15 @@
       font-family: sans-serif;
     }
     h1 {
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-family: sans-serif;
     }
     .main-container {
       background-color: #fcfbfb; 
       padding: 30px; 
       border-radius: 20px;
       box-shadow: 20px 20px 20px 20px #e8e8e8;
+      margin: 80px;
+      margin-top: 50px;
     }
     #name-style {
       font-size: 30px;  
@@ -56,15 +55,34 @@
   
   <!-- This is body, the main content will be inside here -->
   <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary " style="background-color: rgb(232, 248, 254) !important;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MB</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about-me">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#contact-me">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <div class="main-container">
 
       <!-- section 1 -->
       <!-- Put my avatar image and my name with my email  -->
-      <section>
+      <section id="profile">
         <div class="profile-main-container">
           <div>
             <img style="border-radius: 50%;" src="https://scontent.fkul16-1.fna.fbcdn.net/v/t1.6435-9/68365430_2907640435919421_6653110207876431872_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=3jnSE3h-CmwAX-OYEa0&_nc_ht=scontent.fkul16-1.fna&oh=00_AfDhurFcqJFX8X0XgBFOZqdt23QtVkbWJUcV3ApiLqWPnw&oe=649E1988" alt="burhan-avatar" width="200">
+            
           </div>
 
           <div class="profile-info-container">
@@ -79,7 +97,7 @@
 
       <!-- section 2 -->
       <!-- About me, write some thing sweet about you -->
-      <section>
+      <section id="About-Me">
         <h1>About Me</h1>
         <p>
           Old, young, male, female, rich, poor, fit or fat, running has no boundaries. Running doesn’t care if you’re fast or slow, run short or long distances or something in between. Running is yours to own, it’s whatever you want it to be. It’s your PB, it’s your race, it’s your run. There aren’t many sports in the world that require nothing more than a t-shirt and a pair of shorts. For most of us a pair of trainers too. Everything else is a luxury. For less than $100 almost everyone can kit themselves out with the latest branded sweat-wicking, reflective, trendy gear. I love running because it doesn’t require a ticket, a pitch, anyone or anything else. Day or night, in sunshine or rain on roads or through fields. Running is pure freedom.
@@ -89,6 +107,45 @@
           Running is energy, it’s pure, it’s life. I love running.
 
 It’s about you and me, the average person on the street. Not millionaire footballers. It’s us. We’re out there doing it, living it, feeling alive.
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
         </p>
         <button type="button" class="btn btn-primary">Primary</button>
       </section>
@@ -97,7 +154,7 @@ It’s about you and me, the average person on the street. Not millionaire footb
 
       <!-- section 3 -->
       <!-- Contact Information, put your email, fake address, fake number -->
-      <section>
+      <section id="Contact-me">
         <h1>Contact Me</h1>
         <p>
           Email: <span> <a href="mailto:azry1986@gmail.com">azry1986@gmail.com</a></span>
@@ -114,7 +171,7 @@ It’s about you and me, the average person on the street. Not millionaire footb
 
       <!-- section 4 -->
       <!-- some random images -->
-      <section>
+      <section id="random">
         <h1>Some image of me</h1>
         <div class="img-list">
           <img src="https://scontent.fkul16-2.fna.fbcdn.net/v/t1.6435-9/40458292_2353082031375267_1477413297501241344_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=QizvcYKYPiwAX_VimTE&_nc_ht=scontent.fkul16-2.fna&oh=00_AfDlC2WvVO42kbMUttzLByN3q0obRHvh3ojs9YyMO37VHQ&oe=649E0D03" alt="some-random-img" width="400">
@@ -129,5 +186,6 @@ It’s about you and me, the average person on the street. Not millionaire footb
       </section>
     
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
